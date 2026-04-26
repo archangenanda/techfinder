@@ -25,7 +25,7 @@ class UtilisateurFactory extends Factory
             "tel_user" => $this->faker->phoneNumber(),
             "sexe_user" => $this->faker->randomElement(['M', 'F']),
             "role_user" => $this->faker->randomElement(['client', 'technicien']),
-            "etat_user" => $this->faker->randomElement(['actif', 'inactif', 'bloquer'])
+            "etat_user" => $this->faker->randomElement(['actif', 'inactif', 'bloque'])
         ];
     }
 }
