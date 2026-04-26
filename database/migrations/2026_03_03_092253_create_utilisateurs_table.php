@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('tel_user');
             $table->enum('sexe_user', ['M', 'F']);
             $table->enum('role_user', ['admin', 'technicien', 'client'])->default('client');
-            $table->enum('etat_user', ['actif', 'inactif', 'suspendu'])->default('inactif');
+            $table->enum('etat_user', ['actif', 'inactif', 'bloque'])->default('inactif');
             $table->timestamps();
         });
     }
