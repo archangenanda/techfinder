@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('code_user_client', 15);
             $table->string('code_user_techn', 15);
             $table->unsignedInteger('code_comp');
-            $table->foreign('code_user_client')->references('code_user')->on('utilisateurs')->onDelete('cascade');
-            $table->foreign('code_user_techn')->references('code_user')->on('utilisateurs')->onDelete('cascade');
+            $table->foreign('code_user_client')->references('code_user')->on('utilisateur')->onDelete('cascade');
+            $table->foreign('code_user_techn')->references('code_user')->on('utilisateur')->onDelete('cascade');
             $table->foreign('code_comp')->references('code_comp')->on('competences')->onDelete('cascade');
             $table->timestamps();
         });
