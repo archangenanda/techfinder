@@ -1,5 +1,5 @@
 <?php
-use App\Http\Controllers\CompetenceController;
+use App\Http\Controllers\web\CompetenceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InterventionController;
 use App\Http\Controllers\UserCompetenceController;
